@@ -4,56 +4,254 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gmail</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link rel="shortcut icon" href="img/logo-32.png" type="image/x-icon">
 </head>
 <body>
+    <header class="header">
+        <div class="header_container">
+          <div class="none"> </div>
+          <span class="logo-you">
+            <img src="img/logo_gmail_lockup_default_1x_r5.png" title="Gmail" alt="" width="150px">
+          </span>
+          
+          <div class="search">
+            <span><i class="bi bi-search hover" title="Search"></i></span>
+            <input  type="text" placeholder="Search in emails" id="search-bar">
+            <span><i class="bi bi-sliders2 hover " title="Filter"></i></span>
+          </div>
 
-    <section class="header">
-<div class="gmail-icon">
-    <img src="img/logo_gmail_lockup_default_1x_r5.png" width="150" alt="">
-</div>
+    
+          <div class="user">
+            <div class="icon">
+                
+              <i class="bi bi-question-circle i-class hover" title="Support"></i>
+              <i class="bi bi-gear i-class hover" title="Settings"></i>
+              <i class="bi bi-grid-3x3-gap-fill i-class hover" title="List"></i>
+            </div>
+    
+            <div class="img">
+              <img src="img/man.jpg" alt="" class="user-icon" title="User Icon" >
+            </div>
+          </div>
+    
+          <div class="toggle">
+            <i class="fa-solid fa-bars hover" id="header-toggle" title="Toggle"></i>
+          </div>
+        </div>
+      </header>
+      <!--    header      -->
+    
+    
+      <!--    nav      -->
+      <section class="nav" id="navbar">
+        <nav class="nav_container">
+          <div>
+            <a href="#" class="nav_link nav_logo ">
+              <i class="fa-solid fa-bars nav_icon"></i>
+              <span class="logo_name">
+                <i class="fab fa-youtube"></i>
+                Youtube
+              </span>
+            </a>
+    
+            <div class="nav_list">
+              <div class="nav_items navtop">
+                <a href="#" class="nav_link navtop active">
+                  <i class="bi bi-envelope-fill"></i>
+                  <span class="nav_name"></span>
+                </a>
+                <a href="#" class="nav_link navtop">
+                  <i class="bi bi-chat-left"></i>
+                  <span class="nav_name"></span>
+                  
+                </a>
+                <a href="#" class="nav_link navtop">
+                  <i class="bi bi-people-fill"></i>
+                  <span class="nav_name"></span>
+                </a>
+                <!-- <a href="#" class="nav_link navtop">
+                  <i class="fa-solid fa-users nav_icon"></i>
+                  <span class="nav_name">Channel</span>
+                </a>
+                <a href="#" class="nav_link navtop">
+                  <i class="fa-solid fa-video nav_icon"></i>
+                  <span class="nav_name">Library</span>
+                </a>
+                <a href="#" class="nav_link navtop">
+                  <i class="fa-solid fa-clock-rotate-left nav_icon"></i>
+                  <span class="nav_name">History</span>
+                </a>
+                <a href="#" class="nav_link navtop">
+                  <i class="fa-solid fa-thumbs-up nav_icon"></i>
+                  <span class="nav_name">Liked Videos</span>
+                </a>
+    
+                <div class="nav_dropdown">
+                  <a href="#" class="nav_link">
+                    <i class="fa-solid fa-chevron-down nav_icon"></i>
+                    <span class="nav_name">Show More</span>
+                  </a>
+    
+                  <div class="nav_dropdown-collapse">
+                    <div class="nav_dropdown-content">
+                      <a href="#" class="nav_dropdown-item">Grid Box</a>
+                      <a href="#" class="nav_dropdown-item">Frontend Design</a>
+                      <a href="#" class="nav_dropdown-item">Backend Design</a>
+                    </div>
+                  </div>
+                </div>
+    
+                
+              </div>
+    
+              <div class="nav_items subscribe-container">
+                <h3 class="nav_subititle">SUBSCRIPTIONS</h3>
+    
+                <a href="#" class="nav_link">
+                  <img class="subscribe" src="https://img.icons8.com/external-victoruler-flat-victoruler/64/000000/external-boy-people-victoruler-flat-victoruler-5.png" alt="">
+                  <span class="nav_name">Free Code Camp</span>
+                </a>
+                <a href="#" class="nav_link">
+                  <img class="subscribe" src="https://img.icons8.com/external-victoruler-flat-victoruler/64/000000/external-boy-occupation-and-people-victoruler-flat-victoruler.png" />
+                  <span class="nav_name">MSA</span>
+                </a>
+                <a href="#" class="nav_link">
+                  <img class="subscribe" src="https://img.icons8.com/external-victoruler-linear-colour-victoruler/64/000000/external-boy-children-avatar-victoruler-linear-colour-victoruler-2.png" />
+                  <span class="nav_name">Backend Development</span>
+                </a>
+                <a href="#" class="nav_link">
+                  <img class="subscribe" src="https://img.icons8.com/external-victoruler-flat-victoruler/64/000000/external-boy-children-avatar-victoruler-flat-victoruler-12.png" />
+                  <span class="nav_name">Frontend Development</span>
+                </a>
+    
+    
+                <div class="nav_dropdown">
+                  <a href="#" class="nav_link">
+                    <i class="fa-solid fa-chevron-down nav_icon"></i>
+                    <span class="nav_name">Show 3 More</span>
+                  </a>
+    
+                  <div class="nav_dropdown-collapse nav_dropdown-second">
+                    <div class="nav_dropdown-content">
+                      <a href="#" class="nav_dropdown-items">
+                        <img class="subscribe" src="https://img.icons8.com/external-victoruler-flat-victoruler/64/000000/external-boy-children-avatar-victoruler-flat-victoruler-12.png" />
+                        <span class="nav_name">Frontend Design</span>
+                      </a>
+                      <a href="#" class="nav_dropdown-items">
+                        <img class="subscribe" src="https://img.icons8.com/external-victoruler-flat-victoruler/64/000000/external-boy-children-avatar-victoruler-flat-victoruler-12.png" />
+                        <span class="nav_name">Backend Design</span>
+                      </a>
+                      <a href="#" class="nav_dropdown-items">
+                        <img class="subscribe" src="https://img.icons8.com/external-victoruler-flat-victoruler/64/000000/external-boy-children-avatar-victoruler-flat-victoruler-12.png" />
+                        <span class="nav_name">Backend Design</span>
+                      </a>
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </section>
+    
+        <!-- filters -->
+        <!-- <div class="filters">
+            <button class="filter-options active">All</button>
+            <button class="filter-options">CSS</button>
+            <button class="filter-options">web development</button>
+            <button class="filter-options">python</button>
+            <button class="filter-options">entertainment</button>
+            <button class="filter-options">marvel</button>
+            <button class="filter-options">javascript</button>
+            <button class="filter-options">artificial intelligence</button>
+            <button class="filter-options">machine learning</button>
+            <button class="filter-options">HTML</button>
+            <button class="filter-options">MSA</button>
+            <button class="filter-options">trending</button>
+        </div> -->
+    
+        <!-- videos -->
+        <main class="main_content">
+        <div class="video-container">
+            <div class="top">
+                <div class="left">
+                    <div class="check">
+                        <i class="bi bi-square hover"></i>
+                    <span><i class="bi bi-check2 hover"></i></span>
+                    <i class="bi bi-caret-down-fill hover"></i>
+                    </div>
+                    <i class="bi bi-arrow-clockwise hover"></i>
+                    <i class="bi bi-three-dots-vertical hover"></i>
+                </div>
+                <div class="right">
+                    <div class="sort_numbers">1-50 of 94</div>
+                    <i class="bi bi-chevron-left hover"></i>
+                    <i class="bi bi-chevron-right hover"></i>
+                    <i class="bi bi-keyboard hover"></i>
+                </div>
+            </div>
+            
 
-<div class="search-bar">
-    <span><i class="bi bi-search" title="Search"></i></span>
-    <input type="text" placeholder="Search in emails">
-    <span><i class="bi bi-sliders2 " title="Filter"></i></span>
-</div>
+            <div class="promotions">
+                <div class="promotions-item">
+                    <h6><i class="bi bi-inbox-fill"></i>&nbsp;&nbsp;Primary</h6>
+                  </div>
+                  <div class="promotions-item">
+                    <h6><i class="bi bi-tag-fill"></i>&nbsp;&nbsp;Promotions &nbsp;<span class="four">8 new</span></h6>
+                    
+                  </div>
+                  <div class="promotions-item">
+                    <h6><i class="bi bi-people-fill"></i>&nbsp;&nbsp;Social &nbsp; <span class="four">2 new</span></h6>
+                  </div>
+            </div>
+        </div>
 
-<div class="menu-icons">
-    <button class="active"><img src="img/pngtree-circle-clipart-bright-gr.png" alt="" width="20">Active Status</button>
-<div class="menu-icons-right">
-        <i class="bi bi-question-circle i-class" title="Support"></i>
-            <i class="bi bi-gear i-class" title="Settings"></i>
-            <i class="bi bi-grid-3x3-gap-fill i-class"></i>
-   <img src="img/man.jpg" alt="profile picture" class="profile-image" title="profile picture">
-</div>
-</div>
-    </section>
+        <div class="messages_area" id="messages_area">
+            <!-- <div class="messages">
+              <div class="messages_left">
+                <div class="check check_2">
+                  <img src="./img/checkbox.png" alt="" />
+                  <span> <ion-icon name="checkmark"></ion-icon> </span>
+                </div>
+                <ion-icon name="star-outline" class="hover star"></ion-icon>
+                <span class="span-1">Twitter</span>
+              </div>
+              <div class="messages_content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatum deleniti, eligendi vitae explicabo accusamus,
+                distinctio molestias a nisi tempore modi dolores debitis
+                laboriosam? Delectus laudantium, in minima sed eum consectetur!
+              </div>
+              <div class="messages_date">Dec,28</div>
+            </div> -->
+          </div>
+    </main>
+        
 
-    <section class="left-side-nav">
-<div class="left-top">
-    <i class="bi bi-list"></i>
-</div>
-
-<div class="left-bottom">
-    <div class="left-item"><span class="item-2"><button class="button"><i class="bi bi-envelope-fill"></i></button><p class="mail">Mail</p></div>
-    <div class="left-item"><span class="item-2"><i class="bi bi-chat-left"></i><p class="mail-chat">Chat</p></span></div>
-    <div class="left-item"><span class="item-2"><i class="bi bi-people-fill"></i><p class="mail-chat-1">Spaces</p></span></div>
-</div>
-    </section>
-    <section class="left-side-nav">
-<div class="left-top">
-    <i class="bi bi-list"></i>
-</div>
-
-<div class="left-bottom">
-    <div class="left-item"><span class="item-2"><button class="button"><i class="bi bi-envelope-fill"></i></button><p class="mail">Mail</p></div>
-    <div class="left-item"><span class="item-2"><i class="bi bi-chat-left"></i><p class="mail-chat">Chat</p></span></div>
-    <div class="left-item"><span class="item-2"><i class="bi bi-people-fill"></i><p class="mail-chat-1">Spaces</p></span></div>
-</div>
-    </section>
+        <section class="navel" id="navbar">
+            <nav class="aside_icons">
+                <div class="plus-1">
+                <img src="./img/calendar-48.png" alt="" class="hover" title="Calendar" />
+                <img src="./img/keep-48.png" alt="" class="hover" title="Keep"/>
+                <img src="./img/task-48.png" alt="" class="hover" title="Notes"/>
+                <img src="./img/account-48.png" alt="" class="hover" title="Contacts"/>
+                <span></span>
+                <!-- <span class="plus"><i class="bi bi-plus-lg"></i>
+                    <div>
+                        <i class="bi bi-chevron-right"></i>
+                      </div> -->
+              </div>
+             
+              
+            </nav>
+          </section>
 
    <script src="app.js"></script> 
 </body>
